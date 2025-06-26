@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Download, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Linkedin } from 'lucide-react';
 
 const FooterSection = () => {
   return (
@@ -34,7 +34,7 @@ const FooterSection = () => {
       </div>
 
       {/* Links section */}
-      <div className="px-4 md:px-6 py-8 md:py-12 border-b border-gray-800">
+      <div className="px-4 md:px-6 py-8 md:py-12">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row justify-between gap-8">
             <div className="flex items-center gap-4 mb-6 lg:mb-0">
@@ -85,28 +85,6 @@ const FooterSection = () => {
                   <li><a href="#" className="hover:text-white transition-colors">Apply as Mentor</a></li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom section */}
-      <div className="px-4 md:px-6 py-6 md:py-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              <h3 className="text-lg md:text-xl font-semibold">Digital Marketing - Elite</h3>
-              <p className="text-gray-400 text-sm">Looking for your team?</p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-              <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 md:px-8 rounded-lg transition-colors">
-                Apply Now
-              </button>
-              <button className="bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-6 md:px-8 rounded-lg border border-white/20 flex items-center justify-center gap-2 transition-colors">
-                <Download className="w-4 h-4" />
-                Brochure
-              </button>
             </div>
           </div>
           

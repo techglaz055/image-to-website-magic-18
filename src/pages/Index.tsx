@@ -10,10 +10,11 @@ import MentorsSection from '../components/MentorsSection';
 import FAQSection from '../components/FAQSection';
 import CertificationSection from '../components/CertificationSection';
 import FooterSection from '../components/FooterSection';
+import StickyBottomCTA from '../components/StickyBottomCTA';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pb-24">
       <Navbar />
       <HeroSection />
       <StatsSection />
@@ -24,6 +25,7 @@ const Index = () => {
       <FAQSection />
       <CertificationSection />
       <FooterSection />
+      <StickyBottomCTA />
     </div>
   );
 };
