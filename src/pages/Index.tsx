@@ -7,6 +7,7 @@ import KeyOutcomes from '../components/KeyOutcomes';
 import CurriculumSection from '../components/CurriculumSection';
 import TargetAudience from '../components/TargetAudience';
 import MentorsSection from '../components/MentorsSection';
+import FAQSection from '../components/FAQSection';
 import CertificationSection from '../components/CertificationSection';
 import FooterSection from '../components/FooterSection';
 
@@ -20,6 +21,7 @@ const Index = () => {
       <CurriculumSection />
       <TargetAudience />
       <MentorsSection />
+      <FAQSection />
       <CertificationSection />
       <FooterSection />
     </div>
