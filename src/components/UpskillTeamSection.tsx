@@ -38,58 +38,55 @@ const UpskillTeamSection = () => {
   ];
 
   return (
-    <div className="py-12 md:py-16 px-4 md:px-6 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-          <div className="lg:col-span-2">
-            <div className="mb-8">
-              <p className="text-sm text-gray-600 mb-2">SKILL UP, SCALE UP</p>
-              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-                  Upskill your Team; Upscale your Business
-                </h2>
-                <button className="px-6 py-3 bg-white border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition-colors w-fit">
-                  Upskill Your Team
-                </button>
-              </div>
-              <p className="text-gray-700 mb-8">
-                Elevate your team's skills to fuel efficiency and ongoing innovation for sustained business growth.
-              </p>
-            </div>
+    <div className="w-full py-16 md:py-20 px-4 md:px-6 bg-gray-50">
+      <div className="max-w-full mx-auto">
+        <div className="text-center mb-12">
+          <p className="text-sm text-gray-600 mb-2 uppercase tracking-wider">SKILL UP, SCALE UP</p>
+        </div>
 
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Why learn with GrowthSchool?</h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <benefit.icon className="w-6 h-6 text-green-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">{benefit.title}</h4>
-                      <p className="text-gray-600 text-sm">{benefit.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-8">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                Upskill your Team; Upscale your Business
+              </h2>
+              <button className="px-6 py-3 bg-white border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition-colors w-fit">
+                Upskill Your Team
+              </button>
             </div>
+            <p className="text-gray-700 mb-8">
+              Elevate your team's skills to fuel efficiency and ongoing innovation for sustained business growth.
+            </p>
+          </div>
 
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Brands in Collaboration</h3>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {brands.map((brand, index) => (
-                  <div key={index} className={`${brand.color} rounded-xl p-6 flex items-center justify-center h-20`}>
-                    <span className="font-medium text-gray-800">{brand.name}</span>
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-gray-900 mb-6">Why learn with GrowthSchool?</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <benefit.icon className="w-6 h-6 text-green-600" />
                   </div>
-                ))}
-              </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">{benefit.title}</h4>
+                    <p className="text-gray-600 text-sm">{benefit.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-          
-          <div className="lg:block hidden">
-            {/* Empty space for sticky testimonial card */}
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-6">Brands in Collaboration</h3>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {brands.map((brand, index) => (
+                <div key={index} className={`${brand.color} rounded-xl p-6 flex items-center justify-center h-20`}>
+                  <span className="font-medium text-gray-800">{brand.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

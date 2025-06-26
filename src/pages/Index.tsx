@@ -1,12 +1,9 @@
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import StatsSection from '../components/StatsSection';
-import KeyOutcomes from '../components/KeyOutcomes';
-import CurriculumSection from '../components/CurriculumSection';
-import TargetAudience from '../components/TargetAudience';
-import MentorsSection from '../components/MentorsSection';
-import FAQSection from '../components/FAQSection';
+import MainContentWithStickyCard from '../components/MainContentWithStickyCard';
 import CertificationSection from '../components/CertificationSection';
 import FooterSection from '../components/FooterSection';
 import StickyBottomCTA from '../components/StickyBottomCTA';
@@ -21,11 +18,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <StatsSection />
-      <KeyOutcomes />
-      <CurriculumSection />
-      <TargetAudience />
-      <MentorsSection />
-      <FAQSection />
+      <MainContentWithStickyCard />
       <CertificationSection />
       <SuccessStoriesSection />
       <AlumniCompaniesSection />

@@ -57,68 +57,66 @@ const SuccessStoriesSection = () => {
   };
 
   return (
-    <div className="py-12 md:py-16 px-4 md:px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-          <div className="lg:col-span-2">
-            <div className="mb-6 md:mb-8">
-              <p className="text-sm text-gray-600 mb-2">SUCCESS STORIES</p>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Our Learners at Leading Companies</h2>
-              
-              <div className="flex items-center gap-4 mb-6">
-                <button 
-                  onClick={prevSlide}
-                  className="p-2 rounded-full border border-gray-300 hover:bg-gray-50 transition-colors"
-                >
-                  <ChevronLeft className="w-5 h-5" />
-                </button>
-                <button 
-                  onClick={nextSlide}
-                  className="p-2 rounded-full border border-gray-300 hover:bg-gray-50 transition-colors"
-                >
-                  <ChevronRight className="w-5 h-5" />
-                </button>
-              </div>
-            </div>
+    <div className="w-full py-16 md:py-20 px-4 md:px-6 bg-white">
+      <div className="max-w-full mx-auto">
+        <div className="text-center mb-12">
+          <p className="text-sm text-gray-600 mb-2 uppercase tracking-wider">SUCCESS STORIES</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">HEAR IT FROM THEM</h2>
+        </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              {stories.slice(currentSlide * 3, (currentSlide + 1) * 3).map((story, index) => (
-                <div key={index} className="bg-white border border-gray-200 rounded-xl p-4 md:p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <img 
-                      src={story.image} 
-                      alt={story.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <h3 className="font-semibold text-gray-900 text-sm md:text-base">{story.name}</h3>
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-900">Our Learners at Leading Companies</h3>
+            
+            <div className="flex items-center gap-4">
+              <button 
+                onClick={prevSlide}
+                className="p-3 rounded-full border border-gray-300 hover:bg-gray-50 transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button 
+                onClick={nextSlide}
+                className="p-3 rounded-full border border-gray-300 hover:bg-gray-50 transition-colors"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {stories.slice(currentSlide * 3, (currentSlide + 1) * 3).map((story, index) => (
+              <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-4 mb-6">
+                  <img 
+                    src={story.image} 
+                    alt={story.name}
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-gray-900 text-lg">{story.name}</h4>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <span className="text-white text-lg">↓</span>
                     </div>
                   </div>
                   
-                  <div className="space-y-3">
-                    <div className="text-center">
-                      <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
-                        <span className="text-white text-xs">↓</span>
-                      </div>
-                    </div>
-                    
-                    <div className="text-center">
-                      <p className="font-semibold text-gray-900 text-sm">{story.role}</p>
-                      <p className="text-gray-600 text-sm">{story.company}</p>
-                    </div>
-                    
-                    <div className="text-center pt-2 border-t border-gray-100">
-                      <p className="text-gray-600 text-xs">{story.prevRole}</p>
-                      <p className="text-gray-600 text-xs">{story.prevCompany}</p>
-                    </div>
+                  <div className="text-center">
+                    <p className="font-semibold text-gray-900 text-base">{story.role}</p>
+                    <p className="text-gray-600 text-base">{story.company}</p>
+                  </div>
+                  
+                  <div className="text-center pt-3 border-t border-gray-100">
+                    <p className="text-gray-600 text-sm">{story.prevRole}</p>
+                    <p className="text-gray-600 text-sm">{story.prevCompany}</p>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-          
-          <div className="lg:block hidden">
-            {/* Empty space for sticky testimonial card */}
+              </div>
+            ))}
           </div>
         </div>
       </div>
