@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
@@ -11,6 +10,10 @@ import FAQSection from '../components/FAQSection';
 import CertificationSection from '../components/CertificationSection';
 import FooterSection from '../components/FooterSection';
 import StickyBottomCTA from '../components/StickyBottomCTA';
+import SuccessStoriesSection from '../components/SuccessStoriesSection';
+import AlumniCompaniesSection from '../components/AlumniCompaniesSection';
+import TestimonialsSection from '../components/TestimonialsSection';
+import UpskillTeamSection from '../components/UpskillTeamSection';
 
 const Index = () => {
   return (
@@ -24,6 +27,10 @@ const Index = () => {
       <MentorsSection />
       <FAQSection />
       <CertificationSection />
+      <SuccessStoriesSection />
+      <AlumniCompaniesSection />
+      <TestimonialsSection />
+      <UpskillTeamSection />
       <FooterSection />
       <StickyBottomCTA />
     </div>
